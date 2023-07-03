@@ -1,0 +1,11 @@
+dict={"Rasna":"2000","Ruby":"30","Ruhi":"400"}
+print(dict.keys())
+print(dict.values())
+max=0
+for item in dict.values():
+    item=int(item)
+
+    if item>max:
+        max=item
+    
+print(max)

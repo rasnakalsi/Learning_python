@@ -1,0 +1,285 @@
+# farm_animals=["horse","cat","dog"]
+# i=1
+# for item in farm_animals:
+#     print(str(i)+" "+item+" is safe in our farm")
+#     i=i+1
+
+# for item in "This is a string".split():
+#     print(item)
+
+# mynums=[10,20,30]
+# for item in enumerate(mynums,2):
+#     print(item)
+
+# list_a=["a","b","c"]
+# list_b=[1,2,3]
+# list_c=[11,22,33]
+# print(zip(list_a,list_b,list_c))
+# zipped_list=list(zip(list_a,list_b,list_c))
+# print(zipped_list)
+
+# for item in zipped_list:
+#     print(item)
+
+# for (a,b,c) in zipped_list:
+#     print(a)
+#     print(b)
+#     print(c)
+
+
+# print("z" in list_a)
+# print("b" in list_a)
+# dict1={"name1":"Rasna","name2":"Ruby"}
+# print("name2" in dict1)
+# print("Ruby"in dict1.values())
+# print("Ruby" in dict1)
+
+# mylist=[]
+# for elem in range(100):
+#     mylist.append(elem)
+
+# print(mylist)
+
+# from random import shuffle
+# shuffle(mylist)
+
+# print(mylist)
+
+# shuffle(mylist)
+# print(mylist)
+
+# print(list(range(7)))
+# print(tuple(range(2,10,2)))
+# for x in range(2,10,2):
+#     print(x)
+
+## Assignment1: Chapter 35
+# def twelver(num1,num2):
+#     # if (num1==12) or (num2==12):
+#     #     return True
+#     # elif (num1+num2==12):
+#     #     return True
+#     # else:
+#     #     return False
+#     return((num1==12 or num2==12)or (num1+num2==12))
+
+# while(True):
+#     x=input("Enter 1st number : ")
+#     y=input("Enter second number: ")
+#     print("Output is : ",twelver(int(x),int(y)))
+#     choice=input("Do you want to continue(y/n): ")
+#     if choice=="n":
+#         break
+
+# Assignment 2: Chapter 35
+# def pay_extra(working,hour):
+#     if(working==True and (hour>=20 or hour<=8)):
+#         return True
+
+#     else:
+#         return False
+
+# while(True):
+#     working=bool(int(input("Is the employee working(1/0): " )))
+#     print(working)
+#     hour=input("Enter working hour of employe(0-23):")
+#     hour=int(hour)
+#     print("Employe will be paid extra is ",pay_extra(working,hour))
+#     choice=input("Do you want to continue(y/n): ")
+#     if choice=="n":
+#         break
+
+## ASSIGNMENT 3: CHAPTER 35--UDEMY COURSE
+# def sequence(num_list):
+#     print(num_list)
+#     num_list=str(num_list)
+#     print("Str(num_list)",num_list)
+#     if "1, 2, 3" in num_list:
+#         return True
+#     else:
+#         return False
+
+# def sequence1(num_list):
+#     for index,num in enumerate(num_list):
+#         #print(index,num)
+#         if( num==1 ):
+#             if len(num_list)>index+2:
+#                 if (num_list[index+1]==2 and num_list[index+2]==3):
+#                     return True
+        
+#     return False
+
+
+
+# print(sequence1([1,1,1,1,2,3,5,3]))
+# print(sequence1([1,1,2,4,1]))
+# print(sequence1([1,1,2,1,2,3]))
+# print(sequence1([]))
+    
+##ASSIGNMENT #4
+# def grow_string(str):
+#     new_str=""
+#     for n in range(len(str)):
+#         new_str+=(str[:n+1])
+    
+#     return new_str
+
+# print(grow_string("Code"))
+# print(grow_string("abc"))
+# print(grow_string("ab"))
+
+#ASSIGNMENT #5
+# def first3(numbers):
+#     print(numbers)
+#     if 6 in numbers and numbers.index(6)<4:
+#         return "Found 6 in first four elements of list"
+    
+#     return("6 not found in first four elements of list")
+
+# print(first3([1,3,2,4,5,6]))
+# print(first3([1,2,6,4,4,2,9]))
+# print(first3([1,6]))
+# print(first3([]))
+
+##ASSIGNMENT #6
+# def last2(str):
+#     print(str)
+#     sub_str=str[len(str)-2:]
+#     print(sub_str)
+#     n=str.count(sub_str)-1
+#     return n
+# print(last2("hixxxxaxhixx"))
+# print(last2("asRasRWasaaXas"))
+
+# def last2(str):
+#     print(str)
+#     if len(str)<=2:
+#         return 0
+#     last2=str[len(str)-2:]
+#     print(last2)
+#     count=0
+#     for i in range(len(str)-2):
+#         sub_str=str[i:i+2]
+#         #print(sub_str)
+#         if sub_str==last2:
+#             count+=1
+        
+#     return count
+
+# print(last2("xxHixx"))
+# print(last2("hixxxxaxhixx"))
+
+##ASSIGNMENT#7
+# def string_match(a,b):
+#     count=0
+#     for na in range(len(a)-1):
+#         sub_a=a[na:na+2]
+#         print("Checking for substring :",sub_a)
+#         if na+1<=len(b)-1:
+#             sub_b=b[na:na+2]
+#             if sub_b==sub_a:
+#                 print("Matching string is :",sub_a)
+#                 count+=1
+#     return count
+
+
+# while(True):
+#    a=input("Enter the value for string a :")
+#    b=input("Enter the value for string b :") 
+#    print("No of sub strings matched are : ",string_match(a,b))       
+#    choice=input("Do you want to continue(y/n) :")
+#    if choice=="n":
+#        break
+
+##ASSIGNMENT 8
+# def sum78(num):
+#     sum=0
+#     flag=False
+#     for item in num:
+#         if item!=7 and flag==False:
+#             sum=sum+item
+#         elif flag==True and item==8:
+#             flag=False
+#         else:
+#             flag=True
+
+#     return sum
+
+# while(True):
+#     num_list=input("Enter list of numbers, enclosed in [] :")
+#     num_list=list(num_list)
+#     print(type(num_list))
+#     new_list=[]
+#     for i in num_list:
+#         if i!=",":
+#             new_list.append(int(i))
+#     print("New list is :",new_list)
+#     print(new_list)
+#     print("Sum of numbers is :",sum78(new_list))
+#     choice=input("Do you want to continue(y/n) : ")
+#     if choice=="n":
+#         break
+
+fr=[
+    "rasna@gmail|22|A",
+    "ruhi@gmail|33|BD",
+    "rasna@gmail|44|56",
+    "ruby@gmail|33|56"
+]
+
+d={
+   "rasna@gmail":"191",
+   "ruby@gmail":"200"
+
+}
+#change(fr,d)
+
+def change(fr,d):
+    
+    
+    print("Original list fr : ",fr)
+    print("\n Original dictionary d : ",d)
+    
+    for i  in range(len(fr)):
+        found=False
+        email=""
+        item=fr[i]
+        #obtaining email from list fr
+        for  n in range(len(item)):
+            if item[n]=="|":
+                break
+            email+=item[n] 
+        print("Email found in fr list is ",email)
+        for key in d.keys():
+            if key==email:
+                fr[i]=d[key]+item[n:]
+                email=""
+                found=True
+        #case when email present in list fr is not found in dict d
+        # putting an entry of new email into dictionary d       
+        if found!=True:
+            ## Finding the max value of email in dict
+            max=0
+            for value in d.values():
+                value=int(value)
+                if value>max:
+                    max=value
+            print("Max value is ",max) 
+            #making an entry for email found in list fr inside dictionary d,
+            #with key being max(dict_val)+1
+            d[email]=str(max+1) 
+            
+            ##Replacing the value of newly entered dictionary value inside list fr
+            for key in d.keys():
+               if key==email:
+                  fr[i]=d[key]+item[n:]
+                  
+                
+         
+
+    print("Modified fr is :",fr)
+
+
+change(fr,d)
+        
+

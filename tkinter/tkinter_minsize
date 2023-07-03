@@ -1,0 +1,17 @@
+import tkinter as tk 
+from tkinter import messagebox
+
+def really():
+    if messagebox.askyesno("?","Do you really want to close window??"):
+        window.destroy()
+
+window=tk.Tk()
+
+#specifying the size upto which window can be reduced
+window.minsize(width=250,height=200)
+window.maxsize(width=600,height=600)
+window.geometry("500x500")
+window.resizable(width=False,height=False)
+
+window.protocol("WM_DELETE_WINDOW",really)
+window.mainloop()

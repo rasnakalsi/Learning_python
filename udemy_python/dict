@@ -1,0 +1,26 @@
+
+## DICTIONARY1 CODE
+# my_dict={"k1":"some data","k2":"other data",7:43}
+# print(my_dict)
+# print(my_dict.values())
+# print(my_dict[7])
+# my_dict[7]="rasna"
+# print(my_dict)
+
+## DICTIONARY2 CODE
+# people_weight_dict={"john":21,"robert":32,"students":[12,{"class 9":99,"class 8":21}]}
+
+# print(people_weight_dict["students"])
+# print(people_weight_dict["students"][1]["class 8"])
+
+## DICTIONARY3 CODE
+people_weight_dict={1:11,2:22,"tuple":(1,2,3,4)}
+print(people_weight_dict)
+my_tuple=people_weight_dict["tuple"]
+print(my_tuple)
+people_weight_dict["tuple"]=(10,20,30,40)
+print(people_weight_dict)
+xx=people_weight_dict.pop(2)
+print(people_weight_dict)
+print(xx)
+

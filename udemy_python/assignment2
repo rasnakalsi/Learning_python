@@ -1,0 +1,28 @@
+#Print Bill's salary from the list
+# my_list=[{"Tom":2000,"Bill":1200},["car","laptop","tv"]]
+# print("Bill's salary is :",my_list[0]["Bill"])
+# print(my_list[1][1])
+
+## Represent 
+# personal_data={"Mike":{"salary":1200,"owns":["Bike","Jacket"]},"Tom":{"salary":1000,"owns":["Fan","Laptop"]}}
+# print(personal_data["Mike"]["salary"])
+# print(personal_data["Mike"]["owns"])
+
+##Assignment 3
+# original_list=["cup","cereal","milk",(8,4,3)]
+# print(original_list)
+# x=list(original_list[3])
+# print(x)
+# x.sort()
+# #print(x.sort())
+# print(x)
+# print(type(x))
+# original_list[3]=tuple(x)
+# print(original_list)
+
+## ASSIGNMENT 4
+my_list=[(1,2),(3,4),(["c","d","a","m"],[3,9,4,12],4),"TV",42]
+print(my_list)
+my_list[3]="Television"
+my_list[2][0][3]="x"
+print(my_list)

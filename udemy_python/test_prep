@@ -1,0 +1,62 @@
+# lst = [[c for c in range(r)] for r in range(3)]
+# for x in lst:
+#   for y in x:
+#      if y < 2:
+#        print('*', end='')
+
+# lst = [2 ** x for x in range(0, 11)]
+# print(lst[-1])
+# lst1 = "12,34"
+# lst2 = lst1.split(',')
+# print(len(lst1) < len(lst2))
+# print(lst1)
+# print(lst2)
+
+# def fun(a, b=0, c=5, d=1):
+#  return a ** b ** c
+# print(fun(b=2, a=2, c=3))
+
+# x = 5
+# f = lambda x: 1 + 2
+# print(f(x))
+
+# from math import pi as xyz # line 01
+# print(pi) # line 02
+
+# from random import randint
+# for i in range(10):
+#  print(randint(1, 5))
+
+# x = 1 # line 1
+# def a(x): # line 2
+#  return 2 * x # line 3
+# x = 2 + a(x) # line 4
+# print(a(x)) # line 5
+
+# a = 'hello' # line 1
+# def x(a,b): # line 2
+#  z = a[0] # line 3
+#  return z # line 4
+# print(x(a)) # line 5
+
+# s = 'SPAM'
+# def f(x):
+#  return s + 'MAPS'
+# print(f(s))
+
+# def gen():
+#  lst = range(5)
+#  for i in lst:
+#    yield i*i
+# for i in gen():
+#  print(i, end="")
+
+# x = 1
+# y = 0
+# z = x%y
+# print(z)
+
+x = 1
+y = 0
+z = x/y
+print(z)

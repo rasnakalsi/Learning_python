@@ -1,0 +1,19 @@
+# def remainder(x,y):
+#     return x%y
+
+# r=remainder(10,4)
+# print("Remainder is ",r)
+
+def greet_person(name="Rasna",marks=10):
+    """
+    This fn prints greetings
+    input parameters: name,marks
+    output : None
+
+    """
+    print("Hello {0} , How are you".format(name))
+    print("Marks you obtainded are "+str(marks))
+
+greet_person("Ruhi",200)
+
+print(help(greet_person))

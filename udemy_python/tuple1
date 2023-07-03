@@ -1,0 +1,10 @@
+# my_tuple=(1,2,3,"some","some",[1,2,3])
+# count=my_tuple.count("some")
+# print(my_tuple)
+# print(count)
+# print(type(my_tuple[3]))
+# print(type(my_tuple[5][2]))
+# print(type(my_tuple[1]))
+# print(my_tuple.index("some"))
+# print(my_tuple.index([1,2,3]))
+

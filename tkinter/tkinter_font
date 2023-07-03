@@ -1,0 +1,13 @@
+import tkinter as tk
+window=tk.Tk()
+
+label1=tk.Label(window,text="Rasna kalsi gbm")
+label1.grid(column=0,row=0)
+
+label2=tk.Label(window,text="Rasna kalsi gbm",font=("Arial","12"))
+label2.grid(column=0,row=1)
+
+label3=tk.Label(window,text="Rasna kalsi gbm",font=("Times","16","bold"))
+label3.grid(column=0,row=2)
+
+window.mainloop()

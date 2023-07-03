@@ -1,0 +1,21 @@
+import tkinter as tk 
+from tkinter import messagebox
+
+def question():
+    #answer=messagebox.askyesno("Ask the question","To be or not to be?",icon="question",default="no")
+
+    #answer=messagebox.askokcancel("Ask the question","I am going to format your hard disk",icon="info",default="cancel")
+    
+    #answer=messagebox.askretrycancel("What is your wish!!","Oops! I failed again")
+    #answer=messagebox.askquestion("?","I am going to format hard disk??")
+    #answer=messagebox.showerror("!","Your code does nothing!!")
+    answer=messagebox.showwarning("Be Carefull!","Big brother is watching you!!")
+    print(answer)
+
+
+window=tk.Tk()
+
+button=tk.Button(window,text="Ask the question",command=question)
+button.pack()
+
+window.mainloop()

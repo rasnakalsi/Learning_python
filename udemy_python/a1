@@ -1,0 +1,7 @@
+chars="<<>>"
+chars=input("Enter chars : ")
+word="Rasna"
+chars_len=int(len(chars)/2)
+print(chars_len)
+new_chars=chars[:chars_len]+word+chars[chars_len:]
+print(new_chars)

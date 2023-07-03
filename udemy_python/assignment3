@@ -1,0 +1,57 @@
+## ASSIGNMENT 1: MERGING TWO LISTS
+# def merge_lists(l1,l2):
+#     #l3=l1+l2
+#     #l1=l1+l2
+#     l1.append(l2)
+#     #l11.append(l2)
+#     #return l3
+#     return l1
+
+# l1=[1,2,3,4]
+# l2=[11,22,33,44]
+# print("l1 is : ",l1)
+# print("l2 is : ",l2)
+
+# l3=merge_lists(l1,l2)
+# print("l3 is : ",l3)
+# print("l1 is : ",l1)
+# print("l2 is : ",l2)
+
+##ASSIGNMENT 2: WAF that accepts string as an argument and return a list containing each of characters
+##of a string separated as individual items in a list
+
+# def string_to_list(str1):
+#     return list(str1)
+
+# str_list=string_to_list("Rasna kalsi is my name")
+# print(str_list)
+
+## ASSIGNMENT 3:
+## Create a fn called multi_merge that takes list and a string as an argument.
+## The function is supposed to retuen a merged list, containing
+## 1. original list argument
+## 2.each of the word that are in string argument
+## 3.each of the chars in the string
+
+# def multi_merge(list1,str1):
+#     list1=list1+str1.split()+list(str1)
+    
+#     print(list1)
+
+# l1=[1,2,3]
+# s="Hello Rasna"
+# multi_merge(l1,s)
+
+#ASSIGNMENT 4:
+
+# def last_list(*args):
+#     return args[-1]
+
+# print(last_list([1,2,3],[10,20,30],["ruby","ruhi"]))
+
+##ASSigment no: 5
+def key_list_items(key,**kwargs):
+    print(kwargs[key])
+    return(kwargs[key][-2])
+
+print(key_list_items("age",age=[10,20,30,40],name=["Rasna","kalsi","Ruby"]))

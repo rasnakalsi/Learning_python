@@ -1,0 +1,4 @@
+Peter:10
+Paul:20
+Mary:30
+Jane:40

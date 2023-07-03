@@ -1,0 +1,35 @@
+import sys
+import os
+import re
+print("Hi Rasna")
+directory_containing_files="C:\\Users\\rasna\\Documents\\udemy_assignment\\Project_Files"
+print(directory_containing_files)
+#words_aggregate=sys.arg[1:]
+words_aggregate=["are","there","red","horses"]
+print(words_aggregate)
+dict_wc={}
+for word in words_aggregate:
+    dict_wc[word]=0
+
+
+for dir_path,dir_names,file_names in os.walk(directory_containing_files):
+    print(dir_path)
+    print(dir_names)
+    print(file_names)
+    for file in file_names:
+        file=os.path.join(dir_path,file)
+        print("looking at file ",file)
+        with open(file,mode="r") as myfile:
+            content=myfile.read()
+            for word in words_aggregate:
+                match=re.findall(word,content)
+                print("Finding word ",word)
+                print("List of matching words found ",match)
+                #dict_wc[
+                #dict_wc.value+=len(match)
+                dict_wc[word]+=len(match)
+
+
+
+print("Dictionary of words found , with their counts is given below ")
+print(dict_wc)

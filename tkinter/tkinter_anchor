@@ -1,0 +1,17 @@
+import tkinter as tk
+
+window=tk.Tk()
+
+button_1=tk.Button(window,text="Ordinary Button")
+button_1["anchor"]=tk.CENTER
+button_1["width"]=30
+button_1["height"]=4
+button_1.pack()
+
+button_2=tk.Button(window,text="Another Button")
+button_2["anchor"]=tk.SW
+button_2["width"]=30
+button_2["height"]=4
+button_2.pack()
+
+window.mainloop()

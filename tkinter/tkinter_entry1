@@ -1,0 +1,5 @@
+import tkinter as tk 
+window=tk.Tk()
+entry=tk.Entry(window,show="*",width=100)
+entry.pack()
+window.mainloop()

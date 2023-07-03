@@ -1,0 +1,47 @@
+# x=open('file', 'w+')
+# print(x.read())
+# #x.seek(0)
+# x.write(x.name)
+# x.seek(0)
+# print(x.read())
+# print(x.name)    
+
+# v = [1, 2, 3]
+# def g(a,b,m):
+#     return m(a,b)
+  
+# print(g(1, 1, lambda x,y: v[ x:y+1 ]))
+print(__name__)
+
+# w = bool(23)
+# x = bool('')
+# y = bool(' ')
+# z = bool([False])
+# print(w,x,y,z)
+# print([False])
+# print(False)
+# print(True)
+# print(int(False))
+class Team:
+    def __init__(self):
+        print("Hello Ruhi!!")
+    def show_ID(self):
+        print(self.get_ID())
+ 
+    def get_ID(self):
+        return "anonymous"
+ 
+ 
+class A(Team):
+    # def __init__(self):
+    #     #Team.__init__(self)
+    #     print("Hi Rasna")
+    def get_ID(self):
+        return "Alpha"
+    def set_ID(self):
+        pass
+    def show_ID(self):
+        print("Its subclass show")
+a = A()
+a.show_ID()
+ 

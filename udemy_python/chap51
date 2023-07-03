@@ -1,0 +1,42 @@
+class Animal:
+    def __init__(self,name,age):
+        self.animal_name=name
+        self.animal_age=age
+
+    def eat(self):
+        print(self.animal_name + " of age "+str(self.animal_age)+ " is eating")
+
+class Dog(Animal):
+    def move(self):
+        print("Dog is running")
+
+class Fish(Animal):
+    def move(self):
+        print("Fish is swimming")
+
+class Bird(Animal):
+    def move(self):
+        print("Bird is flying")
+
+
+dog1=Dog("Bruno",12)
+fish1=Fish("Mermaid",31)
+bird1=Bird("Chickee",2)
+
+print(dog1.animal_name)
+print(dog1.animal_age)
+dog1.eat()
+dog1.move()
+print("*"*100)
+
+print(fish1.animal_name)
+print(fish1.animal_age)
+fish1.eat()
+fish1.move()
+
+print("*"*100)
+print(bird1.animal_name)
+print(bird1.animal_age)
+bird1.eat()
+bird1.move()
+
